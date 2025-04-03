@@ -1,0 +1,64 @@
+body {
+    background-color: hotpink;  /* Blindingly bright hot pink */
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: limegreen;  /* Neon green text */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background: rgb(102, 255, 0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+
+.flashing-text {
+    font-size: 5rem;
+    animation: flash 0.5s linear infinite;
+    font-weight: bold;
+    text-shadow: 3px 3px 10px black;
+}
+
+@keyframes flash {
+    0% { color: yellow; }
+    50% { color: red; }
+    100% { color: blue; }
+}
+
+.spinning-text {
+    font-size: 3rem;
+    animation: spin 1s linear infinite;
+    text-shadow: 2px 2px 5px white;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.crazy-button {
+    background-color: hotpink;
+    color: yellow;
+    font-size: 2rem;
+    padding: 15px 30px;
+    border: 5px solid black;
+    border-radius: 25px;
+    cursor: pointer;
+    animation: bounce 0.5s ease-in-out infinite;
+}
+
+.crazy-button:hover {
+    background-color: yellow;
+    color: rgb(0, 225, 255);
+    box-shadow: 0 0 20px limegreen;
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0); }
+}
