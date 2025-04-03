@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Add some basic styling */
+        #videoContainer {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <img src="olid imagae.png">
+    <img src="old image.png">
+    <img src="olddi magae.png">
+
+    <!-- Link to the YouTube video -->
+    <p>Click <a href="https://youtu.be/RAK-E6JLfPI" target="_blank">here</a> to watch the best chris edit EVERERRR!!!</p>
+
+    <!-- Button to play the video -->
+    <button onclick="playVideo()">Play Video</button>
+
+    <!-- Container for the YouTube iframe -->
+    <div id="videoContainer">
+        <iframe id="videoFrame" width="560" height="315" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <script>
+        function playVideo() {
+            var videoContainer = document.getElementById("videoContainer");
+            var iframe = document.getElementById("videoFrame");
+
+            // Set the iframe src with autoplay parameter
+            iframe.src = "https://www.youtube.com/embed/RAK-E6JLfPI?autoplay=1";
+
+            // Show the video
+            videoContainer.style.display = "block";
+        }
+    </script>
+</body>
+</html>
