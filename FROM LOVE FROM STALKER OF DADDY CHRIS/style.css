@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+  }
+  
+  body {
+    background: #ff00ff;
+    color: #00ffff;
+    font-size: 24px;
+    text-align: center;
+    animation: background-glow 1s infinite alternate;
+  }
+  
+  h1 {
+    font-size: 5rem;
+    color: #ff0000;
+    animation: shake 0.5s infinite alternate;
+  }
+  
+  .random-text {
+    font-size: 2rem;
+    font-weight: bold;
+    color: yellow;
+    animation: random-color 2s infinite alternate;
+  }
+  
+  .chaos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .spinny {
+    animation: spin 5s linear infinite;
+  }
+  
+  .spinny img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+  }
+  
+  .flashing-text {
+    margin-top: 30px;
+    font-size: 3rem;
+    color: #ffcc00;
+    animation: flash 0.5s infinite alternate;
+  }
+  
+  .disjointed-links a {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px;
+    background-color: #ff00ff;
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    border-radius: 10px;
+    animation: wiggle 0.3s infinite alternate;
+  }
+  
+  .disjointed-links a:hover {
+    background-color: #00ff00;
+  }
+  
+  .confetti {
+    margin-top: 50px;
+    font-size: 2rem;
+    color: #ff6347;
+    animation: confetti-animation 2s infinite;
+  }
+  
+  footer {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    font-size: 1.5rem;
+    color: white;
+    animation: footer-glow 0.5s infinite alternate;
+  }
+  
+  @keyframes shake {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(10px);
+    }
+  }
+  
+  @keyframes random-color {
+    0% {
+      color: yellow;
+    }
+    100% {
+      color: lime;
+    }
+  }
+  
+  @keyframes background-glow {
+    0% {
+      background: #ff00ff;
+    }
+    100% {
+      background: #00ffff;
+    }
+  }
+  
+  @keyframes flash {
+    0% {
+      color: #ffcc00;
+    }
+    100% {
+      color: #ff0000;
+    }
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes wiggle {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(10deg);
+    }
+  }
+  
+  @keyframes confetti-animation {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    50% {
+      transform: translateY(-20px);
+      opacity: 0.5;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes footer-glow {
+    0% {
+      color: #ff6347;
+    }
+    100% {
+      color: #ff00ff;
+    }
+  }
+  
