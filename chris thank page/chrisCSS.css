@@ -1,0 +1,22 @@
+body
+{
+    background-color: aliceblue;
+}
+
+.game
+{
+    background-color: rgba(127, 255, 212, 0.603);
+    border-color: rgb(34, 66, 56);
+    border-width: 2px;
+}
+
+.holes
+{
+    width: 80%;
+    display: grid;
+    grid-template-areas:
+    "hole1 hole2 hole3"
+    "hole4 hole5 hole6"
+    "hole7 hole8 hole9";
+    align-content: center;
+}
