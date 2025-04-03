@@ -1,0 +1,17 @@
+.carousel-inner > .carousel-item > img {
+    width: 100vw;
+    height:100vh;
+  }
+
+.Title{
+    position:absolute;
+    top: 20%;
+    text-align: center;
+    font-size: xx-large;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: hotpink;
+}
+
+.Title > a {
+    -webkit-text-stroke: 0px;
+}
